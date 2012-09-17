@@ -97,7 +97,7 @@
 -(void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info {
     UIImage *image = [info objectForKey:UIImagePickerControllerOriginalImage];
     self.imageData = UIImageJPEGRepresentation(image, 1.0);
-    self.f.image = image;
+    self.userImage.image = image;
     self.userImage.hidden = NO;
     NSLog(@"did finish picking media");
     //self.secretTextView.frame.origin = CGPointMake(self.secretTextView.frame.origin.x, self.secretTextView.frame.origin.y + self.userImage.bounds.size.height);
